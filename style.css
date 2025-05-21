@@ -313,3 +313,189 @@ footer {
   from { opacity: 0; transform: translateY(40px);}
   to { opacity: 1; transform: translateY(0);}
 }
+
+.contact-flex {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.contact-info {
+  flex: 1 1 260px;
+  min-width: 220px;
+}
+.schedule-form {
+  flex: 1 1 320px;
+  min-width: 260px;
+  background: #f0fbfd;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44,186,178,0.08);
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-left: 5px solid #2cbab2;
+}
+.schedule-form h3 {
+  margin-top: 0;
+  color: #239e98;
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+}
+.schedule-form label {
+  font-weight: 500;
+  color: #239e98;
+  margin-bottom: 0.1rem;
+}
+.schedule-form input,
+.schedule-form textarea {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #b2e4e7;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  background: #fff;
+  resize: vertical;
+}
+.schedule-form input:focus,
+.schedule-form textarea:focus {
+  outline: 2px solid #2cbab2;
+  border-color: #2cbab2;
+}
+.schedule-form button {
+  margin-top: 0.5rem;
+  align-self: flex-end;
+}
+
+.floating-schedule-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1000;
+  background: #2cbab2;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(44,186,178,0.18);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.floating-schedule-btn:hover {
+  background: #239e98;
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .floating-schedule-btn {
+    right: 16px;
+    bottom: 16px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+.contact-flex {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: #f0fbfd;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(44,186,178,0.10);
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+  border-left: 5px solid #2cbab2;
+}
+.contact-info {
+  flex: 1 1 260px;
+  min-width: 220px;
+}
+.schedule-form {
+  flex: 1 1 320px;
+  min-width: 260px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-left: 2px solid #b2e4e7;
+}
+.schedule-form h3 {
+  margin-top: 0;
+  color: #239e98;
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+}
+.schedule-form label {
+  font-weight: 500;
+  color: #239e98;
+  margin-bottom: 0.1rem;
+}
+.schedule-form input,
+.schedule-form textarea {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #b2e4e7;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  background: #fff;
+  resize: vertical;
+}
+.schedule-form input:focus,
+.schedule-form textarea:focus {
+  outline: 2px solid #2cbab2;
+  border-color: #2cbab2;
+}
+.schedule-form button {
+  margin-top: 0.5rem;
+  align-self: flex-end;
+}
+
+.floating-schedule-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1000;
+  background: #2cbab2;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(44,186,178,0.18);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.floating-schedule-btn:hover {
+  background: #239e98;
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.2rem 0.7rem;
+  }
+  .schedule-form {
+    padding: 1.5rem 0 0 0;
+    border-left: none;
+    border-top: 2px solid #b2e4e7;
+  }
+  .floating-schedule-btn {
+    right: 16px;
+    bottom: 16px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}

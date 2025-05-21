@@ -12,3 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", revealSection);
   revealSection();
 });
+
+// Floating "Schedule Now" button scrolls to the form
+document.getElementById('floatingScheduleBtn').addEventListener('click', () => {
+  document.getElementById('schedule-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById('name').focus();
+});
+
+// Simple form submission handler (no backend, just shows a thank you)
+document.getElementById('schedule-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('schedule-success').style.display = 'block';
+  this.reset();
+});

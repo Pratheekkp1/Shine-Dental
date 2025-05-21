@@ -21,7 +21,7 @@
   </header>
 
   <section id="about">
-    <h2>ABOUT US<br>WELCOME TO SHINE DENTAL</h2>
+    <h2>ABOUT US</h2>
     <p>At Shine Dental, we deliver painless, effective dental care that will have your mouth in optimal condition and your smile bright and beautiful. From your first visit, Dr. Si-Hyeon Lee will spend time asking about your dental care goals and lifestyle. This ensures your treatment will be tailored to your specific needs, meaning a better experience for you.</p>
 
     <p>Ours is a modern dental practice, using state-of-the-art technology and treatments. At the same time, our office is friendly and inviting, and everyone on our team believes in treating you like a member of the family. We are respectful, compassionate, and passionate about providing high-quality, professional dentistry.</p>
@@ -113,40 +113,45 @@
     <p>When I am not caring for my patients, you'll most often find me with my family. We enjoy watching movies together and traveling.</p>
   </section>
 
-  <section id="testimonials">
-    <h2>HAPPY PATIENTS</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <blockquote>"Shine Dental and their staff are awesome! Courteous, quick and very helpful! Definitely recommend!!"</blockquote>
-        <p>— Jillian Kiendl</p>
+  <section id="contact">
+    <h2>CONTACT US</h2>
+    <div class="contact-flex">
+      <div class="contact-info">
+        <p><strong>Our Address:</strong><br>
+        381 Gateway Dr. Suite 9<br>
+        Winchester, VA 22603</p>
+
+        <p><strong>Email:</strong><br>
+        <a href="mailto:ShineDentalWinchester@gmail.com">ShineDentalWinchester@gmail.com</a></p>
+
+        <p><strong>Tel#1:</strong> <a href="tel:5407733206">540-773-3206</a><br>
+        <strong>Tel#2:</strong> <a href="tel:5404163934">540-416-3934</a><br>
+        <strong>Fax:</strong> 540-773-3216</p>
+
+        <p><strong>Opening Hours:</strong><br>
+        Monday – Thursday 8AM – 5PM</p>
       </div>
-      <div class="testimonial-card">
-        <blockquote>"I've been going to this place for years now. The dentist is good with kids and adults. Good family place to go to for all dental related things."</blockquote>
-        <p>— Shereen Raza</p>
-      </div>
-      <div class="testimonial-card">
-        <blockquote>"I went in on very short notice with a bad wisdom tooth. Dr. Lee was kind and professional and I was in and out in about an hour. He pulled the tooth like he was sipping a cup of coffee."</blockquote>
-        <p>— Cody Montgomery</p>
-      </div>
+      <form class="schedule-form" id="schedule-form">
+        <h3>Schedule Now</h3>
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9\-+\s()]{7,}">
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+        <label for="date">Preferred Date*</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Preferred Time*</label>
+        <input type="time" id="time" name="time" required>
+        <label for="message">Reason/Notes</label>
+        <textarea id="message" name="message" rows="2"></textarea>
+        <button type="submit" class="btn-primary">Submit</button>
+        <div id="schedule-success" style="display:none;color:#2cbab2;margin-top:0.5rem;">Thank you! We'll contact you soon.</div>
+      </form>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>CONTACT US</h2>
-    <p><strong>Our Address:</strong><br>
-    381 Gateway Dr. Suite 9<br>
-    Winchester, VA 22603</p>
-
-    <p><strong>Email:</strong><br>
-    <a href="mailto:ShineDentalWinchester@gmail.com">ShineDentalWinchester@gmail.com</a></p>
-
-    <p><strong>Tel#1:</strong> <a href="tel:5407733206">540-773-3206</a><br>
-    <strong>Tel#2:</strong> <a href="tel:5404163934">540-416-3934</a><br>
-    <strong>Fax:</strong> 540-773-3216</p>
-
-    <p><strong>Opening Hours:</strong><br>
-    Monday – Thursday 8AM – 5PM</p>
-  </section>
+  <button class="floating-schedule-btn" id="floatingScheduleBtn">Schedule Now</button>
 
   <footer>
     <p>&copy; 2025 Shine Dental Kids and Family Dentistry. All Rights Reserved.</p>

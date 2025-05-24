@@ -499,3 +499,30 @@ footer {
     font-size: 1rem;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2a3a3a;
+  background: #ffffff;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* New overlay styling for background sections */
+.overlay {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(3px);
+}
+
+/* Add styling for PDF links */
+a[href$=".pdf"]::after {
+  content: ' \1F4C4';
+  font-size: 0.9rem;
+}
